@@ -1,5 +1,6 @@
 /** @jsx React.DOM */
 var React = require('react');
+var reactimage = require('./react.png');
 
 var data = [
   {name: "Home"},
@@ -11,8 +12,10 @@ var MenuBar = React.createClass({
     render: function() {
       return (
         <nav>
+          <img src={this.props.imagesrc} alt="react logo" />
           <MenuItem data={this.props.data} />
           <MenuItemRight />
+          <h1>hi</h1>
         </nav>
       );
     }
@@ -44,7 +47,7 @@ var MenuItemRight = React.createClass({
 });
 
 React.renderComponent(
-  <MenuBar data={data} />,
+  <MenuBar data={data} imagesrc={reactimage} />,
   document.getElementById('content')
 );
 

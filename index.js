@@ -1,2 +1,2 @@
 require("./template.less");
-require("./menu-component");
+require("./template-component");
