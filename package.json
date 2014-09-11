@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack --progress --colors --watch",
     "dev": "webpack-dev-server --progress --colors",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "dependencies": {
     "css-loader": "^0.8.0",
@@ -14,11 +14,20 @@
     "less": "^1.7.5",
     "less-loader": "^0.7.7",
     "react": "^0.11.1",
+    "react-tools": "^0.11.1",
     "style-loader": "^0.8.0",
     "url-loader": "^0.5.5"
   },
   "devDependencies": {
+    "jest": "^0.1.37",
+    "jest-cli": "^0.1.18",
     "jsx-loader": "^0.11.0"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ]
   },
   "author": "Ronn Ross <ronn.ross@gmail.com> (https://github.com/ronnross)",
   "license": "MIT"

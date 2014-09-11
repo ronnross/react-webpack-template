@@ -1,24 +1,20 @@
 /** @jsx React.DOM */
-var React = require('react');
+var React = require('react/addons');
 
-var data = [
-  {name: "Home"},
-  {name: "Messages"},
-  {name: "live"}
-];
+
 //module.exports = React.renderComponent(<h1>Hello React!</h1>, document.body);
-var MenuBar = React.createClass({
+var TestBar = React.createClass({
     render: function() {
       return (
         <nav>
-          <MenuItem data={this.props.data} />
+          <TestItem data={this.props.data} />
           <MenuItemRight />
         </nav>
       );
     }
 });
 
-var MenuItem = React.createClass({
+var TestItem = React.createClass({
   render: function() {
     var menuNodes = this.props.data.map(function (menuItem){
       return (
@@ -28,9 +24,9 @@ var MenuItem = React.createClass({
       );
     });
     return (
-      <div className="">
+      <ul>
         {menuNodes}
-      </div>
+      </ul>
     );
   }
 });
@@ -43,9 +39,5 @@ var MenuItemRight = React.createClass({
   }
 });
 
-// React.renderComponent(
-//   <MenuBar data={data} />,
-//   document.getElementById('content')
-// );
 
-module.exports = MenuBar;
+module.exports = TestBar;
