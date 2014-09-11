@@ -5,6 +5,7 @@ var MenuBar = React.createClass({
     render: function() {
       return (
         <nav>
+          <img src={this.props.imagesrc} alt="react logo" />
           <MenuItem data={this.props.data} />
           <MenuItemRight />
         </nav>

@@ -1,6 +1,7 @@
 /** @jsx React.DOM */
 require('./template.less');
 var React = require('react');
+var reactimage = require('./images/react.png');
 var MenuBar = require('./components/MenuBar');
 
 var pages = [
@@ -10,6 +11,6 @@ var pages = [
 ];
 
 React.renderComponent(
-  <MenuBar data={pages} />,
+  <MenuBar data={pages} imagesrc={reactimage} />,
   document.getElementById('sampleapp')
 );
