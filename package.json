@@ -2,7 +2,7 @@
   "name": "react-webpack-template",
   "version": "0.0.1",
   "description": "React Webpack Template",
-  "main": "index.js",
+  "main": "components/MenuBar.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/ronnross/react-webpack-template"
