@@ -1,5 +1,5 @@
 /** @jsx React.DOM */
-require('./template.less');
+require('./styles/menubar.less');
 var React = require('react');
 var reactimage = require('./images/react.png');
 var MenuBar = require('./components/MenuBar');
