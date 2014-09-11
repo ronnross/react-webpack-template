@@ -21,12 +21,12 @@ var MenuItem = React.createClass({
           <a href="#">{menuItem.name}</a>
         </li>
       );
-    });//.bind(this));
+    });
 
     return (
-      <div className="">
+      <ul>
         {menuNodes}
-      </div>
+      </ul>
     );
   }
 });
