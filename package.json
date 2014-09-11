@@ -1,8 +1,12 @@
 {
   "name": "react-webpack-template",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "React Webpack Template",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ronnross/react-webpack-template"
+  },
   "scripts": {
     "start": "webpack --progress --colors --watch",
     "dev": "webpack-dev-server --progress --colors",
