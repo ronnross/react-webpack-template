@@ -1,17 +1,15 @@
 /** @jsx React.DOM */
-
+require('./template.less');
 var React = require('react');
 var MenuBar = require('./components/MenuBar');
 
-var data = [
+var pages = [
   {name: "Home"},
   {name: "Messages"},
   {name: "live"}
 ];
 
-var test = 'test';
-
 React.renderComponent(
-  <MenuBar data={data} />,
+  <MenuBar data={pages} />,
   document.getElementById('sampleapp')
 );
