@@ -20,3 +20,6 @@ navigate to
 
 Run Jest unit test
 `npm test`
+
+Pull down with npm
+`npm install -S "git+https://github.com/ronnross/react-webpack-template.git"`
